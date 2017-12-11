@@ -110,6 +110,7 @@ app.get('/input', function (req, res) {
 app.post('/submit-name', function (req, res) {
     var name = req.body.firstName;
      res.send(name + ' Submitted Successfully!');
+	console.log(name + ' Submitted Successfully!');
 });
 
 app.listen(8080,function(){
